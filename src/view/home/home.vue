@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="footer">
-      <div class="mune-title">菜单</div>
+      <div class="mune-title">我是菜单</div>
       <div class="mune-btn">
         <div>
           <div class="btn1 btn" @click="goInfoDeatil" v-if="power['安装']"></div>
