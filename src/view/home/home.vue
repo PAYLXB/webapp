@@ -19,7 +19,7 @@
         <div class="circle orange">{{this.fixNum.cannotFixNo}}</div>
       </div>
       <div class="div marginLeft">
-        <span class="content-text">今日安装</span>
+        <span class="content-text">安装</span>
         <div class="circle green">{{this.fixNum.todayFixNo}}</div>
       </div>
     </div>
