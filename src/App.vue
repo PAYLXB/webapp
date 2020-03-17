@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    
-    
+    <!-- <Footbar></Footbar> -->
+
   </div>
 </template>
 
 <script>
 
+// import Footbar from "./components/footBar/footBar"
 export default {
   name: 'app',
   data() {
@@ -15,7 +16,8 @@ export default {
       naviga: 'value',
     }
   },
- 
+  // components:{Footbar},
+
 }
 </script>
 <style lang="less" scoped>

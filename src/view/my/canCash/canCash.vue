@@ -1,0 +1,36 @@
+<template>
+  <div class="canCash">
+    <mt-header title="可提现转账">
+      <router-link to="/my" slot="left">
+        <mt-button icon="back"></mt-button>
+        <mt-button @click="handleClose"></mt-button>
+      </router-link>
+      <mt-button  slot="right">提现记录</mt-button>
+    </mt-header>
+      canCashcanCashcanCashcanCash
+    </div>
+</template>
+<script>
+// import Footbar from "../../components/footBar/footBar"
+export default {
+  data() {
+    return {
+    };
+  },
+//   components:{Footbar},
+  methods: {
+    /**
+     * params {}
+     * 登陆接口请求
+     */
+
+
+  },
+
+  watch: {
+  }
+};
+</script>
+
+<style scoped>
+</style>

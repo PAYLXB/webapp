@@ -6,9 +6,9 @@
       </div>
     <div style="font-size:24px;margin-top:50px;margin-left:50px">
       {{hello}}
-     
+
     </div>
-    
+
     <div class="contBox">
       <mt-field placeholder="请输入用户名" v-model="formItem.account" class="field"></mt-field>
       <mt-field placeholder="请输入密码" type="password" v-model="formItem.password" class="field"></mt-field>
@@ -45,17 +45,17 @@ export default {
     getTimer(){
       let timer = new Date()
       let hours = timer.getHours()
-      hours > 11 && hours <= 14 
-      ? 
-      this.hello = '中午好' 
-      : 
-      hours >14 && hours <= 20 
+      hours > 11 && hours <= 14
       ?
-      this.hello = '下午好' 
+      this.hello = '中午好'
+      :
+      hours >14 && hours <= 20
+      ?
+      this.hello = '下午好'
       :
       hours >20 && hours <= 23
       ?
-      this.hello = '晚上好' 
+      this.hello = '晚上好'
       :
       hours >0 && hours <= 6
       ?
@@ -74,7 +74,7 @@ export default {
       } else {
         this.loading = false;
       }
-
+      this.$router.push("/home");
       // this.$http({
       //   url: "/login",
       //   params,
