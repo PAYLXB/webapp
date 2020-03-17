@@ -1,10 +1,14 @@
 import Vue from "vue";
 import Router from "vue-router";
 Vue.use(Router);
-
-const constantRoutes = [{
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+    return originalPush.call(this, location).catch(err => err)
+}
+const constantRoutes = [
+    {
         path: "*",
-        redirect: "/my"
+        redirect: "/home"
     },
     {
         name: "login",
@@ -27,30 +31,60 @@ const constantRoutes = [{
     {
         name: "home",
         path: "/home",
+        redirect:'/home/homePage',
         meta: {
             name: '首页',
             keepAlive: false
         },
-        component: () => import("../view/home/home.vue")
+        component: () => import("../view/home/home.vue"),
+        children: [
+            {
+                name:'homePage',
+                path:'homePage',
+                meta:{
+                    name:'天天在职',
+                    keepAlive: false
+                },
+                component: () => import("../view/homePage/homePage.vue"),
+            },
+            {
+                name:'placeOrder',
+                path:'placeOrder',
+                meta:{
+                    name:'下单',
+                    keepAlive: false
+                },
+                component: () => import("../view/placeOrder/placeOrder.vue"),
+            },
+            {
+                name:'my',
+                path:'my',
+                meta:{
+                    name:'我的',
+                    keepAlive: false
+                },
+                component: () => import("../view/my/my.vue"),
+            }
+        ]
     },
-    {
-        name: "placeOrder",
-        path: "/placeOrder",
-        meta: {
-            name: '下单',
-            keepAlive: false
-        },
-        component: () => import("../view/placeOrder/placeOrder.vue")
-    },
-    {
-        name: "my",
-        path: "/my",
-        meta: {
-            name: '我的',
-            keepAlive: false
-        },
-        component: () => import("../view/my/my.vue")
-    },
+    // {
+    //     name: "placeOrder",
+    //     path: "/placeOrder",
+    //     meta: {
+    //         name: '下单',
+    //         keepAlive: false
+    //     },
+    //     component: () => import("../view/placeOrder/placeOrder.vue")
+    // },
+    // {
+    //     name: "my",
+    //     path: "/my",
+    //     meta: {
+    //         name: '我的',
+    //         keepAlive: false
+    //     },
+    //     component: () => import("../view/my/my.vue")
+    // },
     {
         name: "canCash",
         path: "/canCash",

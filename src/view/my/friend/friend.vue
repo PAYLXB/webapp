@@ -1,7 +1,7 @@
 <template>
   <div class="canCash">
      <mt-header title="邀请好友">
-      <router-link to="/my" slot="left">
+      <router-link to="/home/my" slot="left">
         <mt-button icon="back"></mt-button>
       </router-link>
     </mt-header>

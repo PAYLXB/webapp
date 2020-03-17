@@ -1,7 +1,7 @@
 <template>
   <div class="canCash">
      <mt-header title="我要充值">
-      <router-link to="/my" slot="left">
+      <router-link to="/home/my" slot="left">
         <mt-button icon="back"></mt-button>
         <mt-button ></mt-button>
       </router-link>

@@ -1,9 +1,9 @@
 <template>
   <div class="canCash">
     <mt-header title="可提现转账">
-      <router-link to="/my" slot="left">
+      <router-link to="/home/my" slot="left">
         <mt-button icon="back"></mt-button>
-        <mt-button @click="handleClose"></mt-button>
+<!--        <mt-button @click="handleClose"></mt-button>-->
       </router-link>
       <mt-button  slot="right">提现记录</mt-button>
     </mt-header>

@@ -1,6 +1,78 @@
 <template>
-  <div>
-        placeOrder
+  <div class="order">
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div><div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
+      <div>sssssss</div>
         <!-- <Footbar></Footbar> -->
     </div>
 </template>
@@ -39,4 +111,7 @@ export default {
 </script>
 
 <style scoped>
+.order{
+    background: #eee;
+}
 </style>

@@ -98,7 +98,6 @@ export default {
 <style scoped>
 .myPage{
   background: #eeeeee;
-  padding-bottom:20px ;
 }
 .myHeader{
   background: #ffffff;
@@ -182,7 +181,7 @@ export default {
 
 
 .btn{
-  margin:40px 0;
+  margin:16px 0;
   color:#2f89d3;
   background: #fff;
   font-size: 30px;
