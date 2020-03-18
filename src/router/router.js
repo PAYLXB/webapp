@@ -176,6 +176,52 @@ const constantRoutes = [
         },
         component: () => import("../view/my/friend/friend.vue")
     },
+
+    {
+        name: "cooperation",
+        path: "/cooperation",
+        meta: {
+            name: '平台合作协议',
+            keepAlive: false
+        },
+        component: () => import("../view/my/setCenter/src/cooperation.vue")
+    },
+    {
+        name: "about",
+        path: "/about",
+        meta: {
+            name: '关于我们',
+            keepAlive: false
+        },
+        component: () => import("../view/my/setCenter/src/about.vue")
+    },
+    {
+        name: "update",
+        path: "/update",
+        meta: {
+            name: '版本更新',
+            keepAlive: false
+        },
+        component: () => import("../view/my/setCenter/src/update.vue")
+    },
+    {
+        name: "loginPass",
+        path: "/loginPass",
+        meta: {
+            name: '修改登录密码',
+            keepAlive: false
+        },
+        component: () => import("../view/my/accountSecarity/src/loginPass.vue")
+    },
+    {
+        name: "secondPass",
+        path: "/secondPass",
+        meta: {
+            name: '修改二级密码',
+            keepAlive: false
+        },
+        component: () => import("../view/my/accountSecarity/src/secondPass.vue")
+    },
     // {
     //     path: '/content',
     //     component: () => import("../view/content/index.vue"),

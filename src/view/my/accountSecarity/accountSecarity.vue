@@ -3,10 +3,12 @@
      <mt-header title="账户安全">
       <router-link to="/home/my" slot="left">
         <mt-button icon="back"></mt-button>
-        <mt-button @click="handleClose"></mt-button>
       </router-link>
     </mt-header>
-      accountSecarity
+     <div>
+      <mt-cell title="修改登录密码" to="/loginPass"  is-link></mt-cell>
+      <mt-cell title="修改二级密码" to="/secondPass"  is-link></mt-cell>
+    </div>
     </div>
 </template>
 <script>
@@ -32,4 +34,7 @@ export default {
 </script>
 
 <style scoped>
+  .canCash{
+    margin-top: 90px;
+  }
 </style>
