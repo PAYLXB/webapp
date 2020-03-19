@@ -63,7 +63,7 @@ export default {
     height: 300px;
     background: linear-gradient(to right,#2f89d3,#8db5f1);
     margin: 8% 0 5% 5%;
-    box-shadow: 0px 0px 30px #9ea1a7;
+    box-shadow: 0px 0px 30px #d6d8db;
     border-radius: 20px;
   }
   .cardtext{

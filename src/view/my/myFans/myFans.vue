@@ -22,7 +22,7 @@
           </ul>
           <ul class="detailBox1">
             <li>ID:345922 0人</li>
-            <li>注册时间：2020-02-02</li>
+            <li>注册时间：2020-02-02 17:12:23</li>
           </ul>
         </div>
     </div>
@@ -56,11 +56,13 @@ export default {
   height: 100%;
 }
   .card{
+    box-sizing: border-box;
+    font-family: "微软雅黑";
     width: 90%;
     height: 300px;
     background: linear-gradient(to right,#2f89d3,#8db5f1);
     margin: 8% 0 5% 5%;
-    box-shadow: 0px 0px 30px #9ea1a7;
+    box-shadow: 0px 0px 30px #d6d8db;
     border-radius: 20px;
     padding: 60px 20px;
   }
@@ -78,10 +80,12 @@ export default {
     margin-top: 30px;
   }
   .detail{
+    box-sizing: border-box;
+    font-family: "微软雅黑";
     width: 100%;
     padding: 40px 30px;
     background: #eee;
-    box-shadow: 0px 0px 30px #9ea1a7;
+    box-shadow: 0px 0px 30px #d6d8db;
   }
   .detailBox{
     display: flex;
