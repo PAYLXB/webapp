@@ -11,7 +11,7 @@
         <div class="count">
           <p class="single">¥</p>
           <mt-field  type="tel" v-model="phone" style="border-top:none"></mt-field>
-          <p>全部提现</p>
+          <p style="color:#2f89d3">全部提现</p>
         </div>
       </div>
       <p class="money">提现到</p>
@@ -61,7 +61,6 @@ export default {
     box-shadow: 0px 0px 30px #d6d8db;
 }
 .single{
-  color:#2f89d3 ;
   font-size: 40px;
   font-weight: 600;
 }
